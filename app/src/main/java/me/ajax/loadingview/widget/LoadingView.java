@@ -3,6 +3,7 @@ package me.ajax.loadingview.widget;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.CornerPathEffect;
 import android.graphics.Paint;
 import android.graphics.Path;
@@ -65,7 +66,7 @@ public class LoadingView extends View {
         setLayerType(View.LAYER_TYPE_SOFTWARE, null);//关闭硬件加速
 
         //画笔
-        bigBlockPaint.setColor(0xFFFF00FF);
+        bigBlockPaint.setColor(Color.WHITE);
         bigBlockPaint.setPathEffect(new CornerPathEffect(dp2Dx(9)));
 
         smallBlockPaint = new Paint(bigBlockPaint);
